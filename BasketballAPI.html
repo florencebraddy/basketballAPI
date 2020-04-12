@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NBA Ballerz</title>
+
+    <link rel="stylesheet" href="basketball.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div
+      class="background-image"
+      background="img"
+      src="  background: url(https://i.cbc.ca/1.5443354.1580238594!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/bryant-logo.jpg)
+        "
+    ></div>
+
+    <h1 class="title">BALLERZ</h1>
+
+    <div class="input-container">
+      <h2 class="player-title">NBA Player</h2>
+      <input class="player-name-input" type="text" id="myText" />
+      <button class="search-button" onclick="getRequest()">
+        GO!
+      </button>
+    </div>
+
+    <div class="output-container">
+      <h3 class="facts-title">Player Stats</h3>
+      <p id="player-name"></p>
+      <p id="team-name"></p>
+      <!---<p id="division"></p>
+      <p id="position"></p>--->
+    </div>
+  </body>
+  <script src="BasketballAPI.js"></script>
+</html>

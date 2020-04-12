@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(https://i.cbc.ca/1.5443354.1580238594!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/bryant-logo.jpg)
+    center/cover fixed no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.title {
+  font-family: "Indie Flower", cursive;
+  font-size: 130px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  text-align: left;
+  transform: rotate(-15deg);
+  position: absolute;
+  float: top;
+  margin-top: -0.1em;
+  margin: 18px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+  grid-row-gap: 15px;
+  place-items: center;
+  position: absolute;
+  bottom: 270px;
+  left: 20px;
+  margin: 50px;
+}
+
+.player-title {
+  font-family: "Indie Flower", cursive;
+  font-size: 60px;
+  color: red;
+  text-shadow: 4px 4px 4px black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-content: center;
+}
+
+.player-name-input {
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: center;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  border-color: white;
+  outline: none;
+  color: blue;
+  text-align: center;
+}
+
+.search-button {
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 5px black;
+  outline: none;
+  color: blue;
+  width: 100px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: white;
+}
+.search-button:active {
+  background-color: #f31616;
+  box-shadow: 0 5px black;
+  color: white;
+  transform: translateY(4px);
+}
+
+.output-container {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr 1fr, 1fr, 1fr;
+  position: absolute;
+  bottom: 250px;
+  right: 100px;
+  border: black;
+}
+
+.facts-title {
+  font-family: "Indie Flower", cursive;
+  font-size: 80px;
+  color: red;
+  text-shadow: 4px 4px 4px black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#player-name {
+  font-family: "Indie Flower", cursive;
+  font-size: 60px;
+  color: red;
+  text-shadow: 4px 4px 4px black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom: 80px;
+}
+
+#team-name {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 3;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+/*#position {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  justify-content: bottom;
+  margin-bottom: 80px;
+}
+
+#divison {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 4px 4px black;
+  justify-content: bottom;
+  margin-bottom: 80px;
+}
+/*
