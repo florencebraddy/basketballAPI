@@ -18,7 +18,7 @@ body {
   color: white;
   text-shadow: 4px 4px 4px black;
   text-align: left;
-  transform: rotate(-15deg);
+  /* transform: rotate(-15deg); */
   position: absolute;
   float: top;
   margin-top: -0.1em;
@@ -92,13 +92,9 @@ body {
 }
 
 .output-container {
-  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr 1fr, 1fr, 1fr;
-  position: absolute;
-  bottom: 250px;
-  right: 100px;
-  border: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .facts-title {
@@ -106,10 +102,6 @@ body {
   font-size: 80px;
   color: red;
   text-shadow: 4px 4px 4px black;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 #player-name {
@@ -117,10 +109,6 @@ body {
   font-size: 60px;
   color: red;
   text-shadow: 4px 4px 4px black;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
   margin-bottom: 80px;
 }
 
@@ -129,29 +117,20 @@ body {
   font-size: 40px;
   color: white;
   text-shadow: 4px 4px 4px black;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 3;
-  justify-content: center;
   margin-bottom: 80px;
 }
-
-/*#position {
+#division {
   font-family: "Indie Flower", cursive;
   font-size: 50px;
   color: white;
   text-shadow: 4px 4px 4px black;
-  justify-content: bottom;
   margin-bottom: 80px;
 }
 
-#divison {
+#position {
   font-family: "Indie Flower", cursive;
   font-size: 50px;
-  color: white;
+  color: black;
   text-shadow: 4px 4px 4px black;
-  justify-content: bottom;
   margin-bottom: 80px;
 }
-/*

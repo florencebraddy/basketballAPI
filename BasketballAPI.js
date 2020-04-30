@@ -11,9 +11,9 @@ function getRequest() {
     if (request.status >= 200 && request.status < 400) {
       var firstName = data.data[0].first_name;
       var lastName = data.data[0].last_name;
+      var position = data.data[0].position;
       var teamName = data.data[0].team.full_name;
-      //var division = data.data[0].team.division;
-      //var position = data.data[0].position;
+      var division = data.data[0].team.division;
 
       var myArr = JSON.parse(this.responseText);
 
@@ -25,6 +25,7 @@ function getRequest() {
     } else {
       console.log("error");
     }
+    console.log(position);
   };
   // Send request
   request.send();
